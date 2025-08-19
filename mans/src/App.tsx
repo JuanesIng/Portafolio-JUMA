@@ -18,7 +18,7 @@ export default function App() {
           <h2 className="hero__title">
             Hola, soy <span className="accent">Manuel Martinez</span>
           </h2>
-          <p className="hero__subtitle">Desarrollador web full stack</p>
+          <p className="hero__subtitle">Desarrollador web</p>
           <p className="hero__desc">
             Soy desarrollador. Diseño y desarrollo
             aplicaciones: frontend en React/TypeScript, backend con Node.js y Python,
