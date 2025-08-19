@@ -19,7 +19,7 @@ export default function App() {
           </h2>
           <p className="hero__subtitle">Desarrollador web full stack</p>
           <p className="hero__desc">
-            Escribe una breve descripción sobre ti y tu experiencia profesional
+            Soy desarrollador full stack orientado a resultados. Diseño y desarrollo aplicaciones: frontend en React/TypeScript, backend con Node.js y Python, bases de datos SQL/NoSQL y despliegues en la nube.
           </p>
 
           <button className="cta">
@@ -39,8 +39,7 @@ export default function App() {
 
       {/* SKILL SETS */}
       <section className="section">
-        <h3 className="section__title">SKILL SETS</h3>
-
+      
         <div style={{ marginTop: 8, display: "flex", alignItems: "center", gap: 8 }}>
           <span aria-hidden>🔧</span>
           <span className="hero__muted">Skill sets</span>
