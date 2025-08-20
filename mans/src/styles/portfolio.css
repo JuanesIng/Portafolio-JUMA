@@ -155,8 +155,8 @@ body {
 }
 
 /* Avatar con anillo amarillo y foto recortada */
-.avatar { background: #d2b266; display: grid; place-items: center; }
-.avatar__img { width: 99%; height: 99%; object-fit: cover; border-radius: 10%; }
+.avatar { background: #efcf84; display: grid; place-items: center; }
+.avatar__img { width: 85%; height: 99%; object-fit: cover; border-radius: 10%; }
 
 /* Panel de contacto */
 .contact {
