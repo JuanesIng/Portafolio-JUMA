@@ -10,7 +10,7 @@
   --shadow: 0 10px 30px rgba(0,0,0,.12);
 }
 
-html, body, #root { height: 100%; }
+html, body { height: 100%; }
 body {
   margin: 0;
   color: var(--ink);
@@ -59,6 +59,7 @@ body {
   border-radius: 8px;
   color: #2a3b2a;
   cursor: pointer;
+  text-decoration: none; /* para <a> */
 }
 
 .avatar {
@@ -68,18 +69,25 @@ body {
   overflow: hidden;
   margin-inline: auto;
   box-shadow: var(--shadow);
+  background: #ece9e2;           /* anillo amarillo */
+  display: grid;
+  place-items: center;
+}
+.avatar__img {
+  width: 85%;
+  height: 99%;
+  object-fit: cover;
+  border-radius: 10%;
 }
 
-.section {
-  margin-top: 40px;
-}
-
+.section { margin-top: 40px; }
 .section__title {
   font-size: 22px;
   letter-spacing: 1px;
   margin: 0 0 8px;
 }
 
+/* Acordeón (details/summary) */
 .accordion {
   margin-top: 12px;
   border: 1px solid var(--bd);
@@ -87,8 +95,8 @@ body {
   overflow: hidden;
   background: var(--panel);
 }
-
 .accordion__head {
+  list-style: none;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -97,10 +105,12 @@ body {
   font-size: 15px;
   font-weight: 600;
   background: var(--bg-soft);
-  border: 0;
-  text-align: left;
   cursor: pointer;
 }
+.accordion summary { outline: none; }
+.accordion summary::-webkit-details-marker { display: none; }
+.accordion[open] .arrow { transform: rotate(180deg); }
+.arrow { margin-left: auto; opacity: .7; transition: transform .2s ease; }
 
 .chip {
   margin-left: 8px;
@@ -146,25 +156,16 @@ body {
   inset: 0;
   width: 0%;
   background: var(--accent);
+  transition: width .3s ease;
 }
-
-/* responsive */
-@media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; }
-  .avatar { width: 220px; height: 220px; }
-}
-
-/* Avatar con anillo amarillo y foto recortada */
-.avatar { background: #efcf84; display: grid; place-items: center; }
-.avatar__img { width: 85%; height: 99%; object-fit: cover; border-radius: 10%; }
 
 /* Panel de contacto */
 .contact {
-  margin-top: 10px;
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 420px;
+  max-width: 520px;
   background: #fff;
   border: 1px solid var(--bd);
   border-radius: 10px;
@@ -182,3 +183,19 @@ body {
   text-decoration: none;
 }
 .contact__item:hover { filter: brightness(0.98); }
+
+/* Footer */
+.footer {
+  margin-top: 48px;
+  padding-top: 12px;
+  border-top: 1px solid var(--bd);
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; }
+  .avatar { width: 220px; height: 220px; }
+}
