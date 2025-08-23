@@ -1,10 +1,10 @@
 :root {
-      --bg: #0b0c10;
-      --card: #111318;
+      --bg: #344836;
+      --card: #c6ee58;
       --fg: #e8f1ff;
       --muted: #a8b3c7;
       --accent: #4da3ff;
-      --ring: #2b5cff33;
+      --ring: #92949a33;
     }
     * { box-sizing: border-box; }
     html, body { height: 100%; }

@@ -1,4 +1,3 @@
-/* Paleta azul */
 :root {
   --primary: #1e3a8a;
   --secondary: #3b82f6;
@@ -220,7 +219,6 @@ body {
   color: var(--secondary);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .profile {
     flex-direction: column;
